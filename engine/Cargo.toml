@@ -1,0 +1,17 @@
+[package]
+name = "gratingforge"
+version = "0.1.0"
+edition = "2021"
+description = "Design model for waveguide grating couplers"
+license = "MIT"
+
+[lib]
+name = "gratingforge"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gratingforge"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
