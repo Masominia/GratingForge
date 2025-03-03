@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gratingforge"
+version = "0.1.0"
+description = "A grating-coupler design model in Rust: slab modes, phase matching, leaky-wave emission with apodisation, fibre overlap, bandwidth and substrate interference, with a library of designs each checked against an independent calculation."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Amir Masominia" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "pandas>=2.0", "scipy>=1.10", "matplotlib>=3.7", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+gratingforge = "gratingforge.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E741"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/*/pipeline.py" = ["E501"]  # report text
+"scripts/analyse.py" = ["E501"]
