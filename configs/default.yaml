@@ -1,0 +1,17 @@
+# Where the design library lives and how the report groups it.
+cases_dir: cases
+fast_every: 7            # in fast mode only every n-th design is run
+
+families:
+  slab modes: [slab_]
+  angle and period: [angle_]
+  wavelength bands: [band_]
+  uniform gratings: [uniform_]
+  apodised gratings: [apod_]
+  fibre alignment: [fibre_]
+  bandwidth: [bw_]
+  substrate: [box_]
+  platforms: [mat_]
+
+# Designs shown in the overview figure.
+gallery: [uniform_optimum, apod_gauss_cap080, apod_linear_03_30, fibre_tilt_p2, bw_gauss_mfd050, mat_reference]
