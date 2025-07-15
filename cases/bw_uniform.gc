@@ -1,0 +1,10 @@
+# The uniform grating for comparison with the apodised ones.
+# Reference: numerical spectrum in NumPy.
+title Uniform grating: bandwidth
+grating angle=10 length=30
+leak 0.14
+sweep 1.42 1.68 521
+expect peak_wavelength 1.55000000 0.0002
+expect bandwidth_1db 36.19575911 0.004
+expect bandwidth_3db 62.79541487 0.004
+expect group_index 3.61809536 0.0002
