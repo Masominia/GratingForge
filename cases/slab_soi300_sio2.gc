@@ -1,0 +1,10 @@
+# Effective indices of the full and the shallow-etched slab, and the group index of their mean.
+# Reference: root of the three-layer dispersion relation found with SciPy.
+title 300 nm silicon slab, oxide cladding
+stack core=0.3
+materials clad=sio2
+grating angle=10 etch=0.096
+expect n_full 3.04916134 2e-07
+expect n_etched 2.79140503 2e-07
+expect n_grating 2.92028318 2e-07
+expect group_index 3.72073477 0.0002
