@@ -1,0 +1,21 @@
+# Without a top oxide the beam leaves into air.
+# Reference: independent slab solve, overlap and spectrum.
+title Air-clad 220 nm silicon, 10 degrees in air
+materials clad=air
+grating angle=10 length=25
+leak 0.16
+expect n_full 2.83088244 2e-07
+expect n_etched 2.50489392 2e-07
+expect n_grating 2.66788818 2e-07
+expect period 0.62143178 1e-07
+expect angle 10.00000000 1e-05
+expect orders 1
+expect second_order 1.65791050 1e-06
+expect dtheta_dlambda -0.13011821 0.001
+expect radiated 0.98168436 1e-06
+expect overlap 0.76876142 2e-05
+expect efficiency 0.37734053 2e-05
+expect position 4.73835522 0.005
+expect peak_wavelength 1.55000000 0.0002
+expect bandwidth_1db 35.99484245 0.004
+expect bandwidth_3db 62.52933315 0.004
