@@ -1,0 +1,9 @@
+# The more directional the grating itself, the less the substrate matters.
+# Reference: two-beam estimate in NumPy.
+title Intrinsic upward fraction 0.7 with the substrate
+grating angle=10 length=30
+leak 0.14
+up 0.7
+substrate on
+expect up 0.79112778 1e-07
+expect efficiency 0.57571845 2e-05
