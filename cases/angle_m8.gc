@@ -1,0 +1,9 @@
+# Backward emission: a longer period sends the first order behind the normal.
+# Reference: n_grating - lambda / period = n_clad sin(angle).
+title Standard grating designed for -8 degrees
+grating angle=-8 length=20
+expect period 0.53549247 1e-07
+expect angle -8.00000000 1e-05
+expect orders 1
+expect second_order 1.44238424 1e-06
+expect dtheta_dlambda -0.09879202 0.001
