@@ -1,0 +1,9 @@
+# Coupling against fibre position along the grating.
+# Reference: closed form with error functions.
+title Fibre fixed 3 um from the start of the grating
+grating angle=10 length=30
+leak 0.14
+fibre position=3.0
+expect overlap 0.65989358 2e-05
+expect efficiency 0.32499905 2e-05
+expect efficiency_db -4.88118 0.0005
