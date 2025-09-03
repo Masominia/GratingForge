@@ -1,0 +1,23 @@
+# Weak gratings need long apertures; the beam is wide and the band broad.
+# Reference: independent slab solve, overlap and spectrum.
+title Silicon nitride 400 nm, 10 degrees
+stack core=0.4
+materials core=sin
+grating angle=10 etch=0.2 length=60
+leak 0.06
+sweep 1.4 1.7 301
+expect n_full 1.74339491 2e-07
+expect n_etched 1.58407701 2e-07
+expect n_grating 1.66373596 2e-07
+expect period 1.09696615 1e-07
+expect angle 10.00000000 1e-05
+expect orders 2
+expect second_order 1.82506203 1e-06
+expect dtheta_dlambda -0.04311039 0.001
+expect radiated 0.97267628 1e-06
+expect overlap 0.50340865 2e-05
+expect efficiency 0.24482683 2e-05
+expect position 6.49273996 0.005
+expect peak_wavelength 1.55000001 0.0002
+expect bandwidth_1db 65.93339731 0.004
+expect bandwidth_3db 113.99516748 0.004
