@@ -1,0 +1,10 @@
+# TM modes are weaker confined: lower index than TE at the same thickness.
+# Reference: SciPy root of the TM dispersion relation.
+title 340 nm silicon slab, TM polarisation
+stack core=0.34
+polarisation tm
+grating angle=10 etch=0.05
+expect n_full 2.79612332 2e-07
+expect n_etched 2.56115004 2e-07
+expect n_grating 2.67863668 2e-07
+expect group_index 4.30491266 0.0002
