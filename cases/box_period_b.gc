@@ -1,0 +1,8 @@
+# Two oxide thicknesses one interference period apart give the same upward fraction.
+# Reference: the value of box_period_a.
+title Buried oxide 2.3450 um
+stack core=0.22 box=2.34498312
+grating angle=10 length=30
+leak 0.14
+substrate on
+expect up 0.63697459 1e-6
