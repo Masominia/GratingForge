@@ -1,0 +1,10 @@
+# A short grating does not radiate everything: 1 - exp(-leakage x length).
+# Reference: closed form.
+title Uniform grating 15 um long
+grating angle=10 length=15
+leak 0.14
+expect radiated 0.87754357 1e-06
+expect overlap 0.82621664 2e-05
+expect efficiency 0.36252055 2e-05
+expect position 4.92487667 0.005
+expect radiated 0.87754357 1e-6
