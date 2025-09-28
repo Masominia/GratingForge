@@ -1,0 +1,10 @@
+# A grating shorter than the beam truncates the Gaussian.
+# Reference: numerical integration on a finer grid in NumPy.
+title Gaussian-apodised grating 16 um long
+grating angle=10 length=16
+leak 1.0
+apodise gaussian
+expect radiated 0.99846782 1e-06
+expect overlap 0.99754837 2e-05
+expect efficiency 0.49800998 2e-05
+expect position 7.99643518 0.005
