@@ -1,0 +1,8 @@
+# A fully etched tooth has no core left: its index is taken as the cladding index.
+# Reference: mean of the slab index and the oxide index.
+title 220 nm slab etched through
+grating angle=10 etch=0.22 fill=0.6
+expect n_full 2.84778224 2e-07
+expect n_etched 1.44400000 2e-07
+expect n_grating 2.28626935 2e-07
+expect group_index 2.81173002 0.0002
