@@ -1,0 +1,12 @@
+# A smaller beam accepts a wider range of angles, hence of wavelengths: the 1 dB width scales as 1 / MFD.
+# Reference: numerical spectrum, and the Gaussian-beam formula within 3%.
+title Apodised grating and a 10.4 um fibre: bandwidth
+grating angle=10 length=45
+leak 1.5
+apodise gaussian
+fibre mfd=10.4
+sweep 1.42 1.68 521
+expect peak_wavelength 1.55000000 0.0002
+expect bandwidth_1db 41.32555783 0.004
+expect bandwidth_3db 71.73435830 0.004
+expect bandwidth_formula 0.03
