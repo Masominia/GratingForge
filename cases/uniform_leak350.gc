@@ -1,0 +1,10 @@
+# Overlap of an exponentially decaying field with the Gaussian fibre mode.
+# Reference: closed form with error functions.
+title Uniform grating, leakage 0.35 per um
+grating angle=10 length=40
+leak 0.35
+expect radiated 0.99999917 1e-06
+expect overlap 0.78160549 2e-05
+expect efficiency 0.39080242 2e-05
+expect position 3.32436539 0.005
+expect efficiency_db -4.08043 0.0005
