@@ -1,0 +1,11 @@
+# A deeper etch lowers the mean index and tilts the beam backward.
+# Reference: the grating equation.
+title Etch depth 150 nm at a fixed 630 nm period
+grating period=0.63 etch=0.15 length=20
+expect n_etched 1.91897024 2e-07
+expect n_grating 2.38337624 2e-07
+expect period 0.63000000 1e-07
+expect angle -3.05435996 1e-05
+expect orders 1
+expect second_order 1.50152703 1e-06
+expect dtheta_dlambda -0.08371728 0.001
