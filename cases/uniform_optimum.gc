@@ -1,0 +1,10 @@
+# The best overlap of a decaying exponential with a Gaussian is 80.1%, reached when leakage times beam radius is 1.369.
+# Reference: closed form, and the limit itself.
+title Uniform grating at the optimal leakage
+grating angle=10 length=60
+leak 0.259281
+expect radiated 0.99999982 1e-06
+expect overlap 0.80098194 2e-05
+expect efficiency 0.40049090 2e-05
+expect position 3.85906939 0.005
+expect overlap 0.80098 2e-4
