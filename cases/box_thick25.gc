@@ -1,0 +1,10 @@
+# The wave sent downward reflects from the substrate and returns in or out of phase with the upward one.
+# Reference: the same two-beam estimate written independently in NumPy.
+title Buried oxide 2.5 um thick
+stack core=0.22 box=2.5
+grating angle=10 length=30
+leak 0.14
+substrate on
+expect up 0.69597776 1e-07
+expect efficiency 0.50647600 2e-05
+expect peak_wavelength 1.55049868 0.0002
