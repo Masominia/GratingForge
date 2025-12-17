@@ -1,0 +1,17 @@
+# The same recipe at another wavelength; far from 1.55 um the indices are given as numbers.
+# Reference: independent slab solve, overlap and spectrum.
+title 10 degree grating at 1.27 um
+wavelength 1.27
+materials core=3.5140 clad=1.4473 box=1.4473
+grating angle=10 length=20
+fibre mfd=9.2
+sweep 1.210 1.330 241
+expect n_full 3.02168822 2e-07
+expect period 0.48269709 1e-07
+expect radiated 0.93918994 1e-06
+expect overlap 0.74418760 2e-05
+expect efficiency 0.34946675 2e-05
+expect position 4.60442417 0.005
+expect peak_wavelength 1.27000000 0.0002
+expect bandwidth_1db 27.00228117 0.004
+expect bandwidth_3db 46.79274395 0.004
