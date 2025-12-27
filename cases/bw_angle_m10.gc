@@ -1,0 +1,12 @@
+# The width is set by n_group - n_clad sin(angle): steeper forward angles are broader.
+# Reference: numerical spectrum, and the Gaussian-beam formula within 3%.
+title Apodised grating at -10 degrees: bandwidth
+grating angle=-10 length=45
+leak 1.5
+apodise gaussian
+sweep 1.42 1.68 521
+expect peak_wavelength 1.55000000 0.0002
+expect bandwidth_1db 35.90217730 0.004
+expect bandwidth_3db 62.31270458 0.004
+expect dtheta_dlambda -0.10065048 0.001
+expect bandwidth_formula 0.03
