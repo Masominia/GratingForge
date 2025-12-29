@@ -1,0 +1,17 @@
+import json
+
+import pytest
+
+from gratingforge import engine
+from gratingforge.pipeline import run
+
+
+@pytest.mark.skipif(not engine.available(), reason="Rust library not built")
+def test_fast_pipeline(tmp_path):
+    m = run(out=tmp_path, fast=True)
+    assert not [c for c in m["checks"] if c["status"] == "FAIL"]
+    assert m["designs"] >= 15 and m["largest_differences"]["spectrum"] < 2e-5
+    assert (tmp_path / "report.md").exists() and (tmp_path / "figures" / "overview.png").exists()
+    records = list((tmp_path / "cases").glob("*.json"))
+    assert len(records) == m["designs"] == len(list((tmp_path / "figures" / "cases").glob("*.png")))
+    assert json.loads(records[0].read_text())["against_reference"]
