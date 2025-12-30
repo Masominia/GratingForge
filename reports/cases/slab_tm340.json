@@ -1,0 +1,78 @@
+{
+ "case": "slab_tm340",
+ "title": "340 nm silicon slab, TM polarisation",
+ "notes": [
+  "TM modes are weaker confined: lower index than TE at the same thickness.",
+  "Reference: SciPy root of the TM dispersion relation."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.7961233241,
+  "n_etched": 2.5611500375,
+  "n_grating": 2.6786366808,
+  "group_index": 4.30491265,
+  "period": 0.63841476,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.71008121,
+  "dtheta_dlambda": -0.1052998,
+  "radiated": 0.87754357,
+  "up": 0.5,
+  "overlap": 0.82621656,
+  "efficiency": 0.36252052,
+  "efficiency_db": -4.406674,
+  "fibre_angle": 10.0,
+  "fibre_position": 4.924877,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.55000015,
+  "peak_efficiency": 0.36252052,
+  "bandwidth_1db": 30.45794,
+  "bandwidth_3db": 52.653507,
+  "bandwidth_1db_formula": 34.284522
+ },
+ "checks": [
+  {
+   "check": "n_full 2.79612332 2e-07",
+   "status": "PASS",
+   "detail": "2.79612332, expected 2.79612332, off by 4.07e-9"
+  },
+  {
+   "check": "n_etched 2.56115004 2e-07",
+   "status": "PASS",
+   "detail": "2.56115004, expected 2.56115004, off by -2.46e-9"
+  },
+  {
+   "check": "n_grating 2.67863668 2e-07",
+   "status": "PASS",
+   "detail": "2.67863668, expected 2.67863668, off by 8.04e-10"
+  },
+  {
+   "check": "group_index 4.30491266 0.0002",
+   "status": "PASS",
+   "detail": "4.30491265, expected 4.30491266, off by -6.42e-9"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 2.9257485323341825e-11,
+   "n_etched": 3.737543607940097e-11,
+   "n_grating": 4.058975378029572e-12,
+   "group_index": 7.191484741042586e-09,
+   "period": 4.308387202556219e-09,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 4.756676164063833e-09,
+   "dtheta_dlambda": 1.8041985266892269e-09,
+   "radiated": 1.747018085751506e-09,
+   "up": 0.0,
+   "overlap": 7.725867667840447e-08,
+   "efficiency": 2.9448394778253117e-08,
+   "peak_wavelength": 1.418126571728351e-07,
+   "peak_efficiency": 2.944837101948039e-08,
+   "bandwidth_1db": 1.2180450141840993e-06,
+   "bandwidth_3db": 2.5045099789622327e-06,
+   "bandwidth_1db_formula": 5.141904821925891e-07
+  },
+  "spectrum": 3.262440434470548e-08
+ }
+}
