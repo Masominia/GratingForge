@@ -1,0 +1,78 @@
+{
+ "case": "apod_gauss_length40",
+ "title": "Gaussian-apodised grating 40 um long",
+ "notes": [
+  "A grating shorter than the beam truncates the Gaussian.",
+  "Reference: numerical integration on a finer grid in NumPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.63451311,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70910287,
+  "dtheta_dlambda": -0.0874467,
+  "radiated": 0.99899995,
+  "up": 0.5,
+  "overlap": 0.9999988,
+  "efficiency": 0.49949938,
+  "efficiency_db": -3.01465,
+  "fibre_angle": 10.0,
+  "fibre_position": 20.0,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.55000017,
+  "peak_efficiency": 0.49949938,
+  "bandwidth_1db": 41.325261,
+  "bandwidth_3db": 71.734561,
+  "bandwidth_1db_formula": 41.277326
+ },
+ "checks": [
+  {
+   "check": "radiated 0.99900000 1e-06",
+   "status": "PASS",
+   "detail": "0.99899995, expected 0.99900000, off by -4.86e-8"
+  },
+  {
+   "check": "overlap 0.99999993 2e-05",
+   "status": "PASS",
+   "detail": "0.99999880, expected 0.99999993, off by -1.13e-6"
+  },
+  {
+   "check": "efficiency 0.49949996 2e-05",
+   "status": "PASS",
+   "detail": "0.49949938, expected 0.49949996, off by -5.81e-7"
+  },
+  {
+   "check": "position 20.00000000 0.005",
+   "status": "PASS",
+   "detail": "19.99999987, expected 20.00000000, off by -1.26e-7"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 7.44814654396464e-10,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.164746464889845e-09,
+   "dtheta_dlambda": 3.6129811087359798e-09,
+   "radiated": 4.696147315463861e-08,
+   "up": 0.0,
+   "overlap": 1.1253055366422515e-06,
+   "efficiency": 5.811708522207581e-07,
+   "peak_wavelength": 1.6030350202811405e-07,
+   "peak_efficiency": 5.811708270742066e-07,
+   "bandwidth_1db": 2.2758143487067173e-05,
+   "bandwidth_3db": 3.560588177720092e-05,
+   "bandwidth_1db_formula": 9.023421654319463e-08
+  },
+  "spectrum": 5.824708522172983e-07
+ }
+}
