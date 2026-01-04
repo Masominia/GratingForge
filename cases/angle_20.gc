@@ -1,0 +1,9 @@
+# Period from the grating equation for the requested emission angle in the cladding.
+# Reference: n_grating - lambda / period = n_clad sin(angle).
+title Standard grating designed for 20 degrees
+grating angle=20 length=20
+expect period 0.70464513 1e-07
+expect angle 20.00000000 1e-05
+expect orders 1
+expect second_order 1.89800808 1e-06
+expect dtheta_dlambda -0.08493644 0.001
