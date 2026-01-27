@@ -1,0 +1,27 @@
+# Every part of the model at once.
+# Reference: independent slab solve, overlap, substrate estimate and spectrum.
+title Reference design: apodised, directional, on a tuned oxide
+stack core=0.22 box=2.0
+grating angle=10 length=30
+leak 0.5
+apodise gaussian
+up 0.7
+substrate on
+expect n_full 2.84778224 2e-07
+expect n_etched 2.53934955 2e-07
+expect n_grating 2.69356590 2e-07
+expect group_index 3.61809536 0.0002
+expect period 0.63451311 1e-07
+expect angle 10.00000000 1e-05
+expect orders 1
+expect second_order 1.70910287 1e-06
+expect dtheta_dlambda -0.08744670 0.001
+expect radiated 0.99467909 1e-06
+expect overlap 0.99585820 2e-05
+expect efficiency 0.78365900 2e-05
+expect position 15.02127001 0.005
+expect up 0.79112778 1e-07
+expect efficiency_db -1.05873 0.0005
+expect peak_wavelength 1.55056005 0.0002
+expect bandwidth_1db 40.67022412 0.004
+expect bandwidth_3db 70.82977243 0.004
