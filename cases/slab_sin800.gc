@@ -1,0 +1,11 @@
+# A low-contrast platform: the effective index sits close to the cladding.
+# Reference: SciPy root of the dispersion relation.
+title 800 nm silicon nitride slab in oxide
+stack core=0.8
+materials core=sin
+grating angle=10 etch=0.4
+sweep 1.45 1.65 201
+expect n_full 1.88355739 2e-07
+expect n_etched 1.74339491 2e-07
+expect n_grating 1.81347615 2e-07
+expect group_index 2.04615271 0.0002
