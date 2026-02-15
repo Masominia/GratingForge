@@ -1,0 +1,78 @@
+{
+ "case": "bw_uniform",
+ "title": "Uniform grating: bandwidth",
+ "notes": [
+  "The uniform grating for comparison with the apodised ones.",
+  "Reference: numerical spectrum in NumPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.63451311,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70910287,
+  "dtheta_dlambda": -0.0874467,
+  "radiated": 0.98500442,
+  "up": 0.5,
+  "overlap": 0.7387971,
+  "efficiency": 0.36385921,
+  "efficiency_db": -4.390666,
+  "fibre_angle": 10.0,
+  "fibre_position": 4.982033,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.55000017,
+  "peak_efficiency": 0.36385921,
+  "bandwidth_1db": 36.194547,
+  "bandwidth_3db": 62.795696,
+  "bandwidth_1db_formula": 41.277326
+ },
+ "checks": [
+  {
+   "check": "peak_wavelength 1.55000000 0.0002",
+   "status": "PASS",
+   "detail": "1.55000017, expected 1.55000000, off by 1.74e-7"
+  },
+  {
+   "check": "bandwidth_1db 36.19575911 0.004",
+   "status": "PASS",
+   "detail": "36.194547, expected 36.195759, relative error -3.35e-5"
+  },
+  {
+   "check": "bandwidth_3db 62.79541487 0.004",
+   "status": "PASS",
+   "detail": "62.795696, expected 62.795415, relative error 4.48e-6"
+  },
+  {
+   "check": "group_index 3.61809536 0.0002",
+   "status": "PASS",
+   "detail": "3.61809536, expected 3.61809536, off by 7.64e-10"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 7.44814654396464e-10,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.164746464889845e-09,
+   "dtheta_dlambda": 3.6129811087359798e-09,
+   "radiated": 3.1795223121022786e-09,
+   "up": 0.0,
+   "overlap": 2.5110856805010684e-07,
+   "efficiency": 1.1933762705806927e-07,
+   "peak_wavelength": 1.6030345717510386e-07,
+   "peak_efficiency": 1.193376029107185e-07,
+   "bandwidth_1db": 8.189276833547865e-06,
+   "bandwidth_3db": 1.3465189418582213e-05,
+   "bandwidth_1db_formula": 9.023421654319463e-08
+  },
+  "spectrum": 1.2631504886506661e-07
+ }
+}
