@@ -1,0 +1,9 @@
+# A rising ramp delays the emission and makes the field more symmetric; a falling one does the opposite.
+# Reference: numerical integration on a finer grid in NumPy.
+title Leakage ramped from 0 to 0.4 per um
+grating angle=10 length=25
+apodise linear from=0.0 to=0.4
+expect radiated 0.99326205 1e-06
+expect overlap 0.81500752 2e-05
+expect efficiency 0.40475802 2e-05
+expect position 8.91624967 0.005
