@@ -1,0 +1,82 @@
+{
+ "case": "uniform_length05",
+ "title": "Uniform grating 5 um long",
+ "notes": [
+  "A short grating does not radiate everything: 1 - exp(-leakage x length).",
+  "Reference: closed form."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.63451311,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70910287,
+  "dtheta_dlambda": -0.0874467,
+  "radiated": 0.5034147,
+  "up": 0.5,
+  "overlap": 0.64756906,
+  "efficiency": 0.16299789,
+  "efficiency_db": -7.87818,
+  "fibre_angle": 10.0,
+  "fibre_position": 2.340666,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.55000017,
+  "peak_efficiency": 0.16299789,
+  "bandwidth_1db": 77.394648,
+  "bandwidth_3db": null,
+  "bandwidth_1db_formula": 41.277326
+ },
+ "checks": [
+  {
+   "check": "radiated 0.50341470 1e-06",
+   "status": "PASS",
+   "detail": "0.50341470, expected 0.50341470, off by -3.79e-9"
+  },
+  {
+   "check": "overlap 0.64756907 2e-05",
+   "status": "PASS",
+   "detail": "0.64756906, expected 0.64756907, off by -1.48e-8"
+  },
+  {
+   "check": "efficiency 0.16299789 2e-05",
+   "status": "PASS",
+   "detail": "0.16299789, expected 0.16299789, off by -4.02e-10"
+  },
+  {
+   "check": "position 2.34066582 0.005",
+   "status": "PASS",
+   "detail": "2.34066603, expected 2.34066582, off by 2.09e-7"
+  },
+  {
+   "check": "radiated 0.50341470 1e-6",
+   "status": "PASS",
+   "detail": "0.50341470, expected 0.50341470, off by -3.79e-9"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 7.44814654396464e-10,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.164746464889845e-09,
+   "dtheta_dlambda": 3.6129811087359798e-09,
+   "radiated": 3.79140940864886e-09,
+   "up": 0.0,
+   "overlap": 1.222901380160124e-08,
+   "efficiency": 3.885123917024558e-09,
+   "peak_wavelength": 1.603036168251748e-07,
+   "peak_efficiency": 3.885121613311782e-09,
+   "bandwidth_1db": 6.220801708423096e-06,
+   "bandwidth_1db_formula": 9.023421654319463e-08
+  },
+  "spectrum": 1.0239215739171748e-08
+ }
+}
