@@ -1,0 +1,78 @@
+{
+ "case": "bw_sin",
+ "title": "Silicon nitride grating: bandwidth",
+ "notes": [
+  "Low index contrast means a low group index and a wide band.",
+  "Reference: numerical spectrum in NumPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 1.7433949107,
+  "n_etched": 1.5840770123,
+  "n_grating": 1.6637359615,
+  "group_index": 1.91245568,
+  "period": 1.09696615,
+  "angle": 10.0,
+  "orders": 2.0,
+  "second_order_wavelength": 1.82506203,
+  "dtheta_dlambda": -0.04311039,
+  "radiated": 0.99899994,
+  "up": 0.5,
+  "overlap": 0.99999849,
+  "efficiency": 0.49949921,
+  "efficiency_db": -3.014652,
+  "fibre_angle": 10.0,
+  "fibre_position": 22.5,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.5500007,
+  "peak_efficiency": 0.49949921,
+  "bandwidth_1db": 83.882401,
+  "bandwidth_3db": 145.808632,
+  "bandwidth_1db_formula": 83.645935
+ },
+ "checks": [
+  {
+   "check": "peak_wavelength 1.55000001 0.0002",
+   "status": "PASS",
+   "detail": "1.55000070, expected 1.55000001, off by 6.91e-7"
+  },
+  {
+   "check": "bandwidth_1db 83.88402752 0.004",
+   "status": "PASS",
+   "detail": "83.882401, expected 83.884028, relative error -1.94e-5"
+  },
+  {
+   "check": "bandwidth_3db 145.80793623 0.004",
+   "status": "PASS",
+   "detail": "145.808632, expected 145.807936, relative error 4.77e-6"
+  },
+  {
+   "check": "group_index 1.91245568 0.0002",
+   "status": "PASS",
+   "detail": "1.91245568, expected 1.91245568, off by 4.71e-9"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 2.928990383566088e-11,
+   "n_etched": 2.465561088627055e-11,
+   "n_grating": 2.3172574969976267e-12,
+   "group_index": 4.473730497167594e-09,
+   "period": 9.738359008082398e-10,
+   "angle": 8.881784197001252e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.925951119754245e-09,
+   "dtheta_dlambda": 8.447916255427401e-10,
+   "radiated": 5.6154373928585244e-08,
+   "up": 0.0,
+   "overlap": 1.4154648756425914e-06,
+   "efficiency": 7.408568925004744e-07,
+   "peak_wavelength": 7.069350365096483e-07,
+   "peak_efficiency": 7.408568893363388e-07,
+   "bandwidth_1db": 5.71049979498639e-05,
+   "bandwidth_3db": 9.174970455205766e-05,
+   "bandwidth_1db_formula": 4.69177663831033e-07
+  },
+  "spectrum": 7.371824184976283e-07
+ }
+}
