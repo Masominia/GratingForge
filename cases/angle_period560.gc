@@ -1,0 +1,9 @@
+# Emission angle for a given period.
+# Reference: the grating equation with the mean index of the two sections.
+title Standard grating with a 560 nm period
+grating period=0.56 length=20
+expect period 0.56000000 1e-07
+expect angle -2.94906843 1e-05
+expect orders 1
+expect second_order 1.50839690 1e-06
+expect dtheta_dlambda -0.09467144 0.001
