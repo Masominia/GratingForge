@@ -1,0 +1,22 @@
+# A thicker core gives a stronger grating and a higher index.
+# Reference: independent slab solve, overlap and spectrum.
+title 340 nm silicon with a 140 nm etch
+stack core=0.34
+grating angle=12 etch=0.14 length=25
+leak 0.2
+up 0.6
+expect n_full 3.11585188 2e-07
+expect n_etched 2.77619414 2e-07
+expect n_grating 2.94602301 2e-07
+expect period 0.58583448 1e-07
+expect angle 12.00000000 1e-05
+expect orders 1
+expect second_order 1.72588185 1e-06
+expect dtheta_dlambda -0.08932552 0.001
+expect radiated 0.99326205 1e-06
+expect overlap 0.79315590 2e-05
+expect efficiency 0.47268699 2e-05
+expect position 4.34771101 0.005
+expect peak_wavelength 1.55000000 0.0002
+expect bandwidth_1db 38.10618204 0.004
+expect bandwidth_3db 66.39133439 0.004
