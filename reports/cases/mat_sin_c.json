@@ -1,0 +1,133 @@
+{
+ "case": "mat_sin_c",
+ "title": "Silicon nitride 400 nm, 10 degrees",
+ "notes": [
+  "Weak gratings need long apertures; the beam is wide and the band broad.",
+  "Reference: independent slab solve, overlap and spectrum."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 1.7433949107,
+  "n_etched": 1.5840770123,
+  "n_grating": 1.6637359615,
+  "group_index": 1.91245568,
+  "period": 1.09696615,
+  "angle": 10.0,
+  "orders": 2.0,
+  "second_order_wavelength": 1.82506203,
+  "dtheta_dlambda": -0.04311039,
+  "radiated": 0.97267628,
+  "up": 0.5,
+  "overlap": 0.50340822,
+  "efficiency": 0.24482661,
+  "efficiency_db": -6.111414,
+  "fibre_angle": 10.0,
+  "fibre_position": 6.492749,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.5500007,
+  "peak_efficiency": 0.24482661,
+  "bandwidth_1db": 65.930569,
+  "bandwidth_3db": 113.996281,
+  "bandwidth_1db_formula": 83.645935
+ },
+ "checks": [
+  {
+   "check": "n_full 1.74339491 2e-07",
+   "status": "PASS",
+   "detail": "1.74339491, expected 1.74339491, off by 7.29e-10"
+  },
+  {
+   "check": "n_etched 1.58407701 2e-07",
+   "status": "PASS",
+   "detail": "1.58407701, expected 1.58407701, off by 2.28e-9"
+  },
+  {
+   "check": "n_grating 1.66373596 2e-07",
+   "status": "PASS",
+   "detail": "1.66373596, expected 1.66373596, off by 1.50e-9"
+  },
+  {
+   "check": "period 1.09696615 1e-07",
+   "status": "PASS",
+   "detail": "1.09696615, expected 1.09696615, off by 9.74e-10"
+  },
+  {
+   "check": "angle 10.00000000 1e-05",
+   "status": "PASS",
+   "detail": "10.00000000, expected 10.00000000, off by 1.78e-15"
+  },
+  {
+   "check": "orders 2",
+   "status": "PASS",
+   "detail": "2 radiating order(s): [1, 2]"
+  },
+  {
+   "check": "second_order 1.82506203 1e-06",
+   "status": "PASS",
+   "detail": "1.82506203, expected 1.82506203, off by 3.93e-9"
+  },
+  {
+   "check": "dtheta_dlambda -0.04311039 0.001",
+   "status": "PASS",
+   "detail": "-0.043110, expected -0.043110, relative error 2.08e-8"
+  },
+  {
+   "check": "radiated 0.97267628 1e-06",
+   "status": "PASS",
+   "detail": "0.97267628, expected 0.97267628, off by -2.45e-9"
+  },
+  {
+   "check": "overlap 0.50340865 2e-05",
+   "status": "PASS",
+   "detail": "0.50340822, expected 0.50340865, off by -4.34e-7"
+  },
+  {
+   "check": "efficiency 0.24482683 2e-05",
+   "status": "PASS",
+   "detail": "0.24482661, expected 0.24482683, off by -2.15e-7"
+  },
+  {
+   "check": "position 6.49273996 0.005",
+   "status": "PASS",
+   "detail": "6.49274937, expected 6.49273996, off by 9.41e-6"
+  },
+  {
+   "check": "peak_wavelength 1.55000001 0.0002",
+   "status": "PASS",
+   "detail": "1.55000070, expected 1.55000001, off by 6.91e-7"
+  },
+  {
+   "check": "bandwidth_1db 65.93339731 0.004",
+   "status": "PASS",
+   "detail": "65.930569, expected 65.933397, relative error -4.29e-5"
+  },
+  {
+   "check": "bandwidth_3db 113.99516748 0.004",
+   "status": "PASS",
+   "detail": "113.996281, expected 113.995167, relative error 9.77e-6"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 2.928990383566088e-11,
+   "n_etched": 2.465561088627055e-11,
+   "n_grating": 2.3172574969976267e-12,
+   "group_index": 4.473730497167594e-09,
+   "period": 9.738359008082398e-10,
+   "angle": 8.881784197001252e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.925951119754245e-09,
+   "dtheta_dlambda": 8.447916255427401e-10,
+   "radiated": 2.4472924797791507e-09,
+   "up": 0.0,
+   "overlap": 4.3460047738363983e-07,
+   "efficiency": 2.1812230449613779e-07,
+   "peak_wavelength": 7.069347260912906e-07,
+   "peak_efficiency": 2.1812230199813598e-07,
+   "bandwidth_1db": 2.249461954306753e-05,
+   "bandwidth_3db": 3.198137768833931e-05,
+   "bandwidth_1db_formula": 4.69177663831033e-07
+  },
+  "spectrum": 2.133783781887999e-07
+ }
+}
