@@ -1,0 +1,14 @@
+# A tilt error is a phase-matching error at the design wavelength: the peak moves to another wavelength.
+# Reference: closed form with complex error functions.
+title Fibre tilted -1 degrees from the emission angle
+grating angle=10 length=30
+leak 0.14
+fibre angle=9
+sweep 1.45 1.65 401
+expect radiated 0.98500442 1e-06
+expect overlap 0.67426788 2e-05
+expect efficiency 0.33207842 2e-05
+expect position 4.75371053 0.005
+expect peak_wavelength 1.56145811 0.0002
+expect bandwidth_1db 37.10095044 0.004
+expect bandwidth_3db 64.41238616 0.004
