@@ -1,0 +1,10 @@
+# Effective indices of the full and the shallow-etched slab, and the group index of their mean.
+# Reference: root of the three-layer dispersion relation found with SciPy.
+title 340 nm silicon slab, air cladding
+stack core=0.34
+materials clad=air
+grating angle=10 etch=0.109
+expect n_full 3.10920475 2e-07
+expect n_etched 2.86745831 2e-07
+expect n_grating 2.98833153 2e-07
+expect group_index 3.75115546 0.0002
