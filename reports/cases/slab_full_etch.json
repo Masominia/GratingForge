@@ -1,0 +1,78 @@
+{
+ "case": "slab_full_etch",
+ "title": "220 nm slab etched through",
+ "notes": [
+  "A fully etched tooth has no core left: its index is taken as the cladding index.",
+  "Reference: mean of the slab index and the oxide index."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 1.444,
+  "n_grating": 2.2862693461,
+  "group_index": 2.81173002,
+  "period": 0.76147567,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.74093848,
+  "dtheta_dlambda": -0.06648608,
+  "radiated": 0.87754357,
+  "up": 0.5,
+  "overlap": 0.82621656,
+  "efficiency": 0.36252052,
+  "efficiency_db": -4.406674,
+  "fibre_angle": 10.0,
+  "fibre_position": 4.924877,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.55000017,
+  "peak_efficiency": 0.36252052,
+  "bandwidth_1db": 48.249142,
+  "bandwidth_3db": 83.435651,
+  "bandwidth_1db_formula": 54.274139
+ },
+ "checks": [
+  {
+   "check": "n_full 2.84778224 2e-07",
+   "status": "PASS",
+   "detail": "2.84778224, expected 2.84778224, off by 3.45e-9"
+  },
+  {
+   "check": "n_etched 1.44400000 2e-07",
+   "status": "PASS",
+   "detail": "1.44400000, expected 1.44400000, off by 0.00e0"
+  },
+  {
+   "check": "n_grating 2.28626935 2e-07",
+   "status": "PASS",
+   "detail": "2.28626935, expected 2.28626935, off by -3.93e-9"
+  },
+  {
+   "check": "group_index 2.81173002 0.0002",
+   "status": "PASS",
+   "detail": "2.81173002, expected 2.81173002, off by 2.55e-9"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 0.0,
+   "n_grating": 3.2235547564596345e-11,
+   "group_index": 2.786867181470143e-09,
+   "period": 2.3305405383311495e-09,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.230830492029213e-09,
+   "dtheta_dlambda": 3.1868452321504037e-09,
+   "radiated": 1.747018085751506e-09,
+   "up": 0.0,
+   "overlap": 7.725867667840447e-08,
+   "efficiency": 2.9448394778253117e-08,
+   "peak_wavelength": 1.6070988362315575e-07,
+   "peak_efficiency": 2.9448382621310998e-08,
+   "bandwidth_1db": 2.1383054971124693e-06,
+   "bandwidth_3db": 3.909642671828806e-06,
+   "bandwidth_1db_formula": 1.5095884720039976e-07
+  },
+  "spectrum": 3.262908770951256e-08
+ }
+}
