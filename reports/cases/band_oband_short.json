@@ -1,0 +1,103 @@
+{
+ "case": "band_oband_short",
+ "title": "10 degree grating at 1.27 um",
+ "notes": [
+  "The same recipe at another wavelength; far from 1.55 um the indices are given as numbers.",
+  "Reference: independent slab solve, overlap and spectrum."
+ ],
+ "metrics": {
+  "wavelength": 1.27,
+  "n_full": 3.0216882154,
+  "n_etched": 2.7430530424,
+  "n_grating": 2.8823706289,
+  "group_index": 3.60462236,
+  "period": 0.48269709,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.39131192,
+  "dtheta_dlambda": -0.10614058,
+  "radiated": 0.93918994,
+  "up": 0.5,
+  "overlap": 0.74418746,
+  "efficiency": 0.34946669,
+  "efficiency_db": -4.565942,
+  "fibre_angle": 10.0,
+  "fibre_position": 4.604425,
+  "fibre_footprint": 4.67096241,
+  "peak_wavelength": 1.2700002,
+  "peak_efficiency": 0.34946669,
+  "bandwidth_1db": 27.000172,
+  "bandwidth_3db": 46.79335,
+  "bandwidth_1db_formula": 31.456938
+ },
+ "checks": [
+  {
+   "check": "n_full 3.02168822 2e-07",
+   "status": "PASS",
+   "detail": "3.02168822, expected 3.02168822, off by -4.55e-9"
+  },
+  {
+   "check": "period 0.48269709 1e-07",
+   "status": "PASS",
+   "detail": "0.48269709, expected 0.48269709, off by 1.56e-9"
+  },
+  {
+   "check": "radiated 0.93918994 1e-06",
+   "status": "PASS",
+   "detail": "0.93918994, expected 0.93918994, off by -2.63e-9"
+  },
+  {
+   "check": "overlap 0.74418760 2e-05",
+   "status": "PASS",
+   "detail": "0.74418746, expected 0.74418760, off by -1.35e-7"
+  },
+  {
+   "check": "efficiency 0.34946675 2e-05",
+   "status": "PASS",
+   "detail": "0.34946669, expected 0.34946675, off by -6.08e-8"
+  },
+  {
+   "check": "position 4.60442417 0.005",
+   "status": "PASS",
+   "detail": "4.60442473, expected 4.60442417, off by 5.60e-7"
+  },
+  {
+   "check": "peak_wavelength 1.27000000 0.0002",
+   "status": "PASS",
+   "detail": "1.27000020, expected 1.27000000, off by 2.04e-7"
+  },
+  {
+   "check": "bandwidth_1db 27.00228117 0.004",
+   "status": "PASS",
+   "detail": "27.000172, expected 27.002281, relative error -7.81e-5"
+  },
+  {
+   "check": "bandwidth_3db 46.79274395 0.004",
+   "status": "PASS",
+   "detail": "46.793350, expected 46.792744, relative error 1.29e-5"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.64388527632309e-11,
+   "n_etched": 4.808820008861403e-11,
+   "n_grating": 4.7263970515132314e-11,
+   "group_index": 3.7180920564594544e-09,
+   "period": 1.5582496404320523e-09,
+   "angle": 5.329070518200751e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 6.142328867753122e-10,
+   "dtheta_dlambda": 4.306357853645082e-09,
+   "radiated": 2.625217931928603e-09,
+   "up": 0.0,
+   "overlap": 1.4069422549223276e-07,
+   "efficiency": 6.304554944769336e-08,
+   "peak_wavelength": 2.0747295148559886e-07,
+   "peak_efficiency": 6.304552463420876e-08,
+   "bandwidth_1db": 2.918807574303628e-06,
+   "bandwidth_3db": 4.651451405379703e-06,
+   "bandwidth_1db_formula": 4.7307686301678586e-07
+  },
+  "spectrum": 6.500914517815204e-08
+ }
+}
