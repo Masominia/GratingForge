@@ -1,0 +1,78 @@
+{
+ "case": "apod_linear_00_40",
+ "title": "Leakage ramped from 0 to 0.4 per um",
+ "notes": [
+  "A rising ramp delays the emission and makes the field more symmetric; a falling one does the opposite.",
+  "Reference: numerical integration on a finer grid in NumPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.63451311,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70910287,
+  "dtheta_dlambda": -0.0874467,
+  "radiated": 0.99326205,
+  "up": 0.5,
+  "overlap": 0.81500681,
+  "efficiency": 0.40475767,
+  "efficiency_db": -3.928049,
+  "fibre_angle": 10.0,
+  "fibre_position": 8.916267,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.55000017,
+  "peak_efficiency": 0.40475767,
+  "bandwidth_1db": 33.094064,
+  "bandwidth_3db": 57.272455,
+  "bandwidth_1db_formula": 41.277326
+ },
+ "checks": [
+  {
+   "check": "radiated 0.99326205 1e-06",
+   "status": "PASS",
+   "detail": "0.99326205, expected 0.99326205, off by 3.00e-9"
+  },
+  {
+   "check": "overlap 0.81500752 2e-05",
+   "status": "PASS",
+   "detail": "0.81500681, expected 0.81500752, off by -7.13e-7"
+  },
+  {
+   "check": "efficiency 0.40475802 2e-05",
+   "status": "PASS",
+   "detail": "0.40475767, expected 0.40475802, off by -3.53e-7"
+  },
+  {
+   "check": "position 8.91624967 0.005",
+   "status": "PASS",
+   "detail": "8.91626723, expected 8.91624967, off by 1.76e-5"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 7.44814654396464e-10,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.164746464889845e-09,
+   "dtheta_dlambda": 3.6129811087359798e-09,
+   "radiated": 3.000914516881892e-09,
+   "up": 0.0,
+   "overlap": 7.098714713826837e-07,
+   "efficiency": 3.511993606486463e-07,
+   "peak_wavelength": 1.6030342497863614e-07,
+   "peak_efficiency": 3.5119932884075666e-07,
+   "bandwidth_1db": 3.291760516788145e-05,
+   "bandwidth_3db": 4.919329288810559e-05,
+   "bandwidth_1db_formula": 9.023421654319463e-08
+  },
+  "spectrum": 3.538993606500007e-07
+ }
+}
