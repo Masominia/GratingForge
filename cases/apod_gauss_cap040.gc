@@ -1,0 +1,11 @@
+# The leakage follows the profile that emits a Gaussian matched to the fibre, up to what the etch can provide.
+# Reference: numerical integration on a finer grid in NumPy.
+title Gaussian-apodised grating, leakage limited to 0.4 per um
+grating angle=10 length=30
+leak 0.4
+apodise gaussian
+expect radiated 0.98908705 1e-06
+expect overlap 0.98892624 2e-05
+expect efficiency 0.48906707 2e-05
+expect position 15.04993563 0.005
+expect efficiency_db -3.10632 0.0005
