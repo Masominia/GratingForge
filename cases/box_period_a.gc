@@ -1,0 +1,8 @@
+# Two oxide thicknesses one interference period apart give the same upward fraction.
+# Reference: period lambda / (2 n cos(theta)) = 0.54498 um.
+title Buried oxide 1.8 um
+stack core=0.22 box=1.8
+grating angle=10 length=30
+leak 0.14
+substrate on
+expect up 0.63697459 1e-07
