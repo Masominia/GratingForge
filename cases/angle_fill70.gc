@@ -1,0 +1,10 @@
+# A higher fill raises the mean index and tilts the beam forward.
+# Reference: the grating equation.
+title Fill factor 0.7 at a fixed 630 nm period
+grating period=0.63 fill=0.7 length=20
+expect n_grating 2.75525244 2e-07
+expect period 0.63000000 1e-07
+expect angle 11.78551626 1e-05
+expect orders 1
+expect second_order 1.73580903 1e-06
+expect dtheta_dlambda -0.08777572 0.001
