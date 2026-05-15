@@ -1,0 +1,83 @@
+{
+ "case": "angle_8",
+ "title": "Standard grating designed for 8 degrees",
+ "notes": [
+  "Period from the grating equation for the requested emission angle in the cladding.",
+  "Reference: n_grating - lambda / period = n_clad sin(angle)."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.62184066,
+  "angle": 8.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.6749688,
+  "dtheta_dlambda": -0.088268,
+  "radiated": 0.93918994,
+  "up": 0.5,
+  "overlap": 0.77352146,
+  "efficiency": 0.36324178,
+  "efficiency_db": -4.398042,
+  "fibre_angle": 8.0,
+  "fibre_position": 4.964148,
+  "fibre_footprint": 5.25110338,
+  "peak_wavelength": 1.55000017,
+  "peak_efficiency": 0.36324178,
+  "bandwidth_1db": 35.826993,
+  "bandwidth_3db": 62.150899,
+  "bandwidth_1db_formula": 40.901513
+ },
+ "checks": [
+  {
+   "check": "period 0.62184066 1e-07",
+   "status": "PASS",
+   "detail": "0.62184066, expected 0.62184066, off by 3.14e-9"
+  },
+  {
+   "check": "angle 8.00000000 1e-05",
+   "status": "PASS",
+   "detail": "8.00000000, expected 8.00000000, off by -7.99e-15"
+  },
+  {
+   "check": "orders 1",
+   "status": "PASS",
+   "detail": "1 radiating order(s): [1]"
+  },
+  {
+   "check": "second_order 1.67496880 1e-06",
+   "status": "PASS",
+   "detail": "1.67496880, expected 1.67496880, off by 4.46e-9"
+  },
+  {
+   "check": "dtheta_dlambda -0.08826800 0.001",
+   "status": "PASS",
+   "detail": "-0.088268, expected -0.088268, relative error -3.36e-8"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 3.139435267307533e-09,
+   "angle": 7.993605777301127e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 4.458305724597267e-09,
+   "dtheta_dlambda": 3.3246603248215933e-09,
+   "radiated": 2.625217931928603e-09,
+   "up": 0.0,
+   "overlap": 1.1471705674281907e-07,
+   "efficiency": 5.965827765130882e-08,
+   "peak_wavelength": 1.603138646277813e-07,
+   "peak_efficiency": 5.965825339293573e-08,
+   "bandwidth_1db": 3.276294037846128e-06,
+   "bandwidth_3db": 5.003926311530904e-06,
+   "bandwidth_1db_formula": 3.169925548718311e-07
+  },
+  "spectrum": 5.546116982335647e-08
+ }
+}
