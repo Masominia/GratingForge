@@ -1,0 +1,14 @@
+# The leakage that suits one mode size is wrong for another.
+# Reference: closed form with error functions.
+title Fibre with a 6 um mode field diameter
+grating angle=10 length=30
+leak 0.14
+fibre mfd=6.0
+sweep 1.42 1.68 261
+expect radiated 0.98500442 1e-06
+expect overlap 0.58807778 2e-05
+expect efficiency 0.28962961 2e-05
+expect position 3.44559698 0.005
+expect peak_wavelength 1.55000000 0.0002
+expect bandwidth_1db 58.05241376 0.004
+expect bandwidth_3db 100.42652835 0.004
