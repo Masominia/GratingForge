@@ -1,0 +1,68 @@
+{
+ "case": "box_up90",
+ "title": "Intrinsic upward fraction 0.9 with the substrate",
+ "notes": [
+  "The more directional the grating itself, the less the substrate matters.",
+  "Reference: two-beam estimate in NumPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.63451311,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70910287,
+  "dtheta_dlambda": -0.0874467,
+  "radiated": 0.98500442,
+  "up": 0.9264079,
+  "overlap": 0.7387971,
+  "efficiency": 0.67416409,
+  "efficiency_db": -1.712344,
+  "fibre_angle": 10.0,
+  "fibre_position": 4.982033,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.55009121,
+  "peak_efficiency": 0.67416803,
+  "bandwidth_1db": 36.196565,
+  "bandwidth_3db": 62.798262,
+  "bandwidth_1db_formula": 41.277326
+ },
+ "checks": [
+  {
+   "check": "up 0.92640790 1e-07",
+   "status": "PASS",
+   "detail": "0.92640790, expected 0.92640790, off by 1.66e-9"
+  },
+  {
+   "check": "efficiency 0.67416432 2e-05",
+   "status": "PASS",
+   "detail": "0.67416409, expected 0.67416432, off by -2.30e-7"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 7.44814654396464e-10,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.164746464889845e-09,
+   "dtheta_dlambda": 3.6129811087359798e-09,
+   "radiated": 3.1795223121022786e-09,
+   "up": 1.6635277599874598e-09,
+   "overlap": 2.5110856805010684e-07,
+   "efficiency": 2.25584739110829e-07,
+   "peak_wavelength": 1.5555125787436452e-07,
+   "peak_efficiency": 2.140348642765133e-07,
+   "bandwidth_1db": 7.693195207991721e-06,
+   "bandwidth_3db": 1.3002715171239743e-05,
+   "bandwidth_1db_formula": 9.023421654319463e-08
+  },
+  "spectrum": 2.3449410258002956e-07
+ }
+}
