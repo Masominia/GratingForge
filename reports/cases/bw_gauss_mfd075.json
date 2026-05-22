@@ -1,0 +1,78 @@
+{
+ "case": "bw_gauss_mfd075",
+ "title": "Apodised grating and a 7.5 um fibre: bandwidth",
+ "notes": [
+  "A smaller beam accepts a wider range of angles, hence of wavelengths: the 1 dB width scales as 1 / MFD.",
+  "Reference: numerical spectrum, and the Gaussian-beam formula within 3%."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.63451311,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70910287,
+  "dtheta_dlambda": -0.0874467,
+  "radiated": 0.99899988,
+  "up": 0.5,
+  "overlap": 0.99999709,
+  "efficiency": 0.49949849,
+  "efficiency_db": -3.014658,
+  "fibre_angle": 10.0,
+  "fibre_position": 22.5,
+  "fibre_footprint": 3.80784979,
+  "peak_wavelength": 1.55000017,
+  "peak_efficiency": 0.49949849,
+  "bandwidth_1db": 57.316555,
+  "bandwidth_3db": 99.533352,
+  "bandwidth_1db_formula": 57.237892
+ },
+ "checks": [
+  {
+   "check": "peak_wavelength 1.55000000 0.0002",
+   "status": "PASS",
+   "detail": "1.55000017, expected 1.55000000, off by 1.74e-7"
+  },
+  {
+   "check": "bandwidth_1db 57.31720135 0.004",
+   "status": "PASS",
+   "detail": "57.316555, expected 57.317201, relative error -1.13e-5"
+  },
+  {
+   "check": "bandwidth_3db 99.53353508 0.004",
+   "status": "PASS",
+   "detail": "99.533352, expected 99.533535, relative error -1.84e-6"
+  },
+  {
+   "check": "bandwidth_formula 0.03",
+   "status": "PASS",
+   "detail": "57.317 nm computed, 57.238 nm from the formula, ratio 1.0014"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 7.44814654396464e-10,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.164746464889845e-09,
+   "dtheta_dlambda": 3.6129811087359798e-09,
+   "radiated": 1.126054429700929e-07,
+   "up": 0.0,
+   "overlap": 2.7282237492487482e-06,
+   "efficiency": 1.4155054848807858e-06,
+   "peak_wavelength": 1.603035713060308e-07,
+   "peak_efficiency": 1.4155054718356652e-06,
+   "bandwidth_1db": 7.485936547624306e-05,
+   "bandwidth_3db": 0.00011958965853864356,
+   "bandwidth_1db_formula": 1.784581158403853e-07
+  },
+  "spectrum": 1.417405484871459e-06
+ }
+}
