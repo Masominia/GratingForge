@@ -1,0 +1,93 @@
+{
+ "case": "fibre_tilt_m2",
+ "title": "Fibre tilted -2 degrees from the emission angle",
+ "notes": [
+  "A tilt error is a phase-matching error at the design wavelength: the peak moves to another wavelength.",
+  "Reference: closed form with complex error functions."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.63451311,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70910287,
+  "dtheta_dlambda": -0.0874467,
+  "radiated": 0.98500442,
+  "up": 0.5,
+  "overlap": 0.52141585,
+  "efficiency": 0.25679846,
+  "efficiency_db": -5.904076,
+  "fibre_angle": 8.0,
+  "fibre_position": 4.134599,
+  "fibre_footprint": 5.25110338,
+  "peak_wavelength": 1.57295932,
+  "peak_efficiency": 0.35660319,
+  "bandwidth_1db": 39.056035,
+  "bandwidth_3db": 67.972148,
+  "bandwidth_1db_formula": 40.901513
+ },
+ "checks": [
+  {
+   "check": "radiated 0.98500442 1e-06",
+   "status": "PASS",
+   "detail": "0.98500442, expected 0.98500442, off by 3.18e-9"
+  },
+  {
+   "check": "overlap 0.52141614 2e-05",
+   "status": "PASS",
+   "detail": "0.52141585, expected 0.52141614, off by -2.92e-7"
+  },
+  {
+   "check": "efficiency 0.25679860 2e-05",
+   "status": "PASS",
+   "detail": "0.25679846, expected 0.25679860, off by -1.42e-7"
+  },
+  {
+   "check": "position 4.13459709 0.005",
+   "status": "PASS",
+   "detail": "4.13459856, expected 4.13459709, off by 1.47e-6"
+  },
+  {
+   "check": "peak_wavelength 1.57295915 0.0002",
+   "status": "PASS",
+   "detail": "1.57295932, expected 1.57295915, off by 1.68e-7"
+  },
+  {
+   "check": "bandwidth_1db 39.05754551 0.004",
+   "status": "PASS",
+   "detail": "39.056035, expected 39.057546, relative error -3.87e-5"
+  },
+  {
+   "check": "bandwidth_3db 67.97144626 0.004",
+   "status": "PASS",
+   "detail": "67.972148, expected 67.971446, relative error 1.03e-5"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 7.44814654396464e-10,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.164746464889845e-09,
+   "dtheta_dlambda": 3.6129811087359798e-09,
+   "radiated": 3.1795223121022786e-09,
+   "up": 0.0,
+   "overlap": 2.8549153119339366e-07,
+   "efficiency": 1.398881656622386e-07,
+   "peak_wavelength": 1.7597249413192628e-07,
+   "peak_efficiency": 1.07926957093607e-07,
+   "bandwidth_1db": 1.5719437520544943e-05,
+   "bandwidth_3db": 2.835433394920983e-05,
+   "bandwidth_1db_formula": 3.169925548718311e-07
+  },
+  "spectrum": 1.5201523764774016e-07
+ }
+}
