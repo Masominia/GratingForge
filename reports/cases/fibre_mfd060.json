@@ -1,0 +1,93 @@
+{
+ "case": "fibre_mfd060",
+ "title": "Fibre with a 6 um mode field diameter",
+ "notes": [
+  "The leakage that suits one mode size is wrong for another.",
+  "Reference: closed form with error functions."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.63451311,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70910287,
+  "dtheta_dlambda": -0.0874467,
+  "radiated": 0.98500442,
+  "up": 0.5,
+  "overlap": 0.58807732,
+  "efficiency": 0.28962938,
+  "efficiency_db": -5.381574,
+  "fibre_angle": 10.0,
+  "fibre_position": 3.4456,
+  "fibre_footprint": 3.04627984,
+  "peak_wavelength": 1.5500007,
+  "peak_efficiency": 0.28962938,
+  "bandwidth_1db": 58.048131,
+  "bandwidth_3db": 100.427315,
+  "bandwidth_1db_formula": 71.547365
+ },
+ "checks": [
+  {
+   "check": "radiated 0.98500442 1e-06",
+   "status": "PASS",
+   "detail": "0.98500442, expected 0.98500442, off by 3.18e-9"
+  },
+  {
+   "check": "overlap 0.58807778 2e-05",
+   "status": "PASS",
+   "detail": "0.58807732, expected 0.58807778, off by -4.64e-7"
+  },
+  {
+   "check": "efficiency 0.28962961 2e-05",
+   "status": "PASS",
+   "detail": "0.28962938, expected 0.28962961, off by -2.32e-7"
+  },
+  {
+   "check": "position 3.44559698 0.005",
+   "status": "PASS",
+   "detail": "3.44560042, expected 3.44559698, off by 3.44e-6"
+  },
+  {
+   "check": "peak_wavelength 1.55000000 0.0002",
+   "status": "PASS",
+   "detail": "1.55000070, expected 1.55000000, off by 6.96e-7"
+  },
+  {
+   "check": "bandwidth_1db 58.05241376 0.004",
+   "status": "PASS",
+   "detail": "58.048131, expected 58.052414, relative error -7.38e-5"
+  },
+  {
+   "check": "bandwidth_3db 100.42652835 0.004",
+   "status": "PASS",
+   "detail": "100.427315, expected 100.426528, relative error 7.83e-6"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 7.44814654396464e-10,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.164746464889845e-09,
+   "dtheta_dlambda": 3.6129811087359798e-09,
+   "radiated": 3.1795223121022786e-09,
+   "up": 0.0,
+   "overlap": 4.56990775554722e-07,
+   "efficiency": 2.2575474734054524e-07,
+   "peak_wavelength": 7.072462957502523e-07,
+   "peak_efficiency": 2.2575474323272005e-07,
+   "bandwidth_1db": 2.1121720877204098e-05,
+   "bandwidth_3db": 3.314734811965536e-05,
+   "bandwidth_1db_formula": 2.2307264657683845e-07
+  },
+  "spectrum": 2.2731896509586846e-07
+ }
+}
