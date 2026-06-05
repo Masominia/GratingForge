@@ -1,0 +1,83 @@
+{
+ "case": "apod_gauss_cap080",
+ "title": "Gaussian-apodised grating, leakage limited to 0.8 per um",
+ "notes": [
+  "The leakage follows the profile that emits a Gaussian matched to the fibre, up to what the etch can provide.",
+  "Reference: numerical integration on a finer grid in NumPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.63451311,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70910287,
+  "dtheta_dlambda": -0.0874467,
+  "radiated": 0.9987371,
+  "up": 0.5,
+  "overlap": 0.99993995,
+  "efficiency": 0.49933856,
+  "efficiency_db": -3.016049,
+  "fibre_angle": 10.0,
+  "fibre_position": 15.000417,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.55000017,
+  "peak_efficiency": 0.49933856,
+  "bandwidth_1db": 41.299507,
+  "bandwidth_3db": 71.713946,
+  "bandwidth_1db_formula": 41.277326
+ },
+ "checks": [
+  {
+   "check": "radiated 0.99873711 1e-06",
+   "status": "PASS",
+   "detail": "0.99873710, expected 0.99873711, off by -5.18e-9"
+  },
+  {
+   "check": "overlap 0.99994056 2e-05",
+   "status": "PASS",
+   "detail": "0.99993995, expected 0.99994056, off by -6.12e-7"
+  },
+  {
+   "check": "efficiency 0.49933888 2e-05",
+   "status": "PASS",
+   "detail": "0.49933856, expected 0.49933888, off by -3.15e-7"
+  },
+  {
+   "check": "position 15.00041743 0.005",
+   "status": "PASS",
+   "detail": "15.00041744, expected 15.00041743, off by 1.29e-8"
+  },
+  {
+   "check": "efficiency_db -3.01605 0.0005",
+   "status": "PASS",
+   "detail": "-3.01604892, expected -3.01605000, off by 1.08e-6"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 7.44814654396464e-10,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.164746464889845e-09,
+   "dtheta_dlambda": 3.6129811087359798e-09,
+   "radiated": 1.4876973430943963e-08,
+   "up": 0.0,
+   "overlap": 6.111135377739885e-07,
+   "efficiency": 3.155274983512868e-07,
+   "peak_wavelength": 1.6030349780926656e-07,
+   "peak_efficiency": 3.155274729826907e-07,
+   "bandwidth_1db": 1.1123230514442639e-05,
+   "bandwidth_3db": 1.8375237573309278e-05,
+   "bandwidth_1db_formula": 9.023421654319463e-08
+  },
+  "spectrum": 3.1101072794914586e-07
+ }
+}
