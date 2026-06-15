@@ -1,0 +1,73 @@
+{
+ "case": "fibre_position00",
+ "title": "Fibre fixed 0 um from the start of the grating",
+ "notes": [
+  "Coupling against fibre position along the grating.",
+  "Reference: closed form with error functions."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.63451311,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70910287,
+  "dtheta_dlambda": -0.0874467,
+  "radiated": 0.98500442,
+  "up": 0.5,
+  "overlap": 0.31730587,
+  "efficiency": 0.15627384,
+  "efficiency_db": -8.061137,
+  "fibre_angle": 10.0,
+  "fibre_position": 0.0,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.55000017,
+  "peak_efficiency": 0.15627384,
+  "bandwidth_1db": 53.084535,
+  "bandwidth_3db": 94.796335,
+  "bandwidth_1db_formula": 41.277326
+ },
+ "checks": [
+  {
+   "check": "overlap 0.31730577 2e-05",
+   "status": "PASS",
+   "detail": "0.31730587, expected 0.31730577, off by 1.01e-7"
+  },
+  {
+   "check": "efficiency 0.15627380 2e-05",
+   "status": "PASS",
+   "detail": "0.15627384, expected 0.15627380, off by 4.33e-8"
+  },
+  {
+   "check": "efficiency_db -8.06114 0.0005",
+   "status": "PASS",
+   "detail": "-8.06113707, expected -8.06114000, off by 2.93e-6"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 7.44814654396464e-10,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.164746464889845e-09,
+   "dtheta_dlambda": 3.6129811087359798e-09,
+   "radiated": 3.1795223121022786e-09,
+   "up": 0.0,
+   "overlap": 9.523871496996961e-08,
+   "efficiency": 4.417986451676903e-08,
+   "peak_wavelength": 1.6030352867346664e-07,
+   "peak_efficiency": 4.417986934623919e-08,
+   "bandwidth_1db": 7.816909385383042e-05,
+   "bandwidth_3db": 0.00016475997750831084,
+   "bandwidth_1db_formula": 9.023421654319463e-08
+  },
+  "spectrum": 1.6357147358814217e-07
+ }
+}
