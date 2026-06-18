@@ -1,0 +1,78 @@
+{
+ "case": "slab_soi250_sio2",
+ "title": "250 nm silicon slab, oxide cladding",
+ "notes": [
+  "Effective indices of the full and the shallow-etched slab, and the group index of their mean.",
+  "Reference: root of the three-layer dispersion relation found with SciPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.9369035142,
+  "n_etched": 2.6455260209,
+  "n_grating": 2.7912147676,
+  "group_index": 3.67172896,
+  "period": 0.61012409,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70298738,
+  "dtheta_dlambda": -0.08884085,
+  "radiated": 0.87754357,
+  "up": 0.5,
+  "overlap": 0.82621656,
+  "efficiency": 0.36252052,
+  "efficiency_db": -4.406674,
+  "fibre_angle": 10.0,
+  "fibre_position": 4.924877,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.55000017,
+  "peak_efficiency": 0.36252052,
+  "bandwidth_1db": 36.103189,
+  "bandwidth_3db": 62.420594,
+  "bandwidth_1db_formula": 40.630187
+ },
+ "checks": [
+  {
+   "check": "n_full 2.93690351 2e-07",
+   "status": "PASS",
+   "detail": "2.93690351, expected 2.93690351, off by 4.21e-9"
+  },
+  {
+   "check": "n_etched 2.64552602 2e-07",
+   "status": "PASS",
+   "detail": "2.64552602, expected 2.64552602, off by 9.10e-10"
+  },
+  {
+   "check": "n_grating 2.79121477 2e-07",
+   "status": "PASS",
+   "detail": "2.79121477, expected 2.79121477, off by -2.44e-9"
+  },
+  {
+   "check": "group_index 3.67172896 0.0002",
+   "status": "PASS",
+   "detail": "3.67172896, expected 3.67172896, off by 1.17e-9"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 1.460387366591931e-11,
+   "n_etched": 1.0192291455268787e-11,
+   "n_grating": 3.76019215764245e-11,
+   "group_index": 1.4379795132413165e-09,
+   "period": 2.3924684455778333e-09,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.2685369966145572e-09,
+   "dtheta_dlambda": 2.7520034723282905e-09,
+   "radiated": 1.747018085751506e-09,
+   "up": 0.0,
+   "overlap": 7.725867667840447e-08,
+   "efficiency": 2.9448394778253117e-08,
+   "peak_wavelength": 1.6050852891247303e-07,
+   "peak_efficiency": 2.944837185214766e-08,
+   "bandwidth_1db": 1.3100277342914524e-06,
+   "bandwidth_3db": 3.2844482618088477e-06,
+   "bandwidth_1db_formula": 3.1854558812938194e-07
+  },
+  "spectrum": 3.262535858139515e-08
+ }
+}
