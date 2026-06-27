@@ -1,0 +1,83 @@
+{
+ "case": "bw_angle_5",
+ "title": "Apodised grating at 5 degrees: bandwidth",
+ "notes": [
+  "The width is set by n_group - n_clad sin(angle): steeper forward angles are broader.",
+  "Reference: numerical spectrum, and the Gaussian-beam formula within 3%."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.60365002,
+  "angle": 5.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.6259711,
+  "dtheta_dlambda": -0.0896979,
+  "radiated": 0.99899994,
+  "up": 0.5,
+  "overlap": 0.99999845,
+  "efficiency": 0.4994992,
+  "efficiency_db": -3.014652,
+  "fibre_angle": 5.0,
+  "fibre_position": 22.5,
+  "fibre_footprint": 5.21986316,
+  "peak_wavelength": 1.55000017,
+  "peak_efficiency": 0.4994992,
+  "bandwidth_1db": 40.287356,
+  "bandwidth_3db": 69.931667,
+  "bandwidth_1db_formula": 40.261306
+ },
+ "checks": [
+  {
+   "check": "peak_wavelength 1.55000000 0.0002",
+   "status": "PASS",
+   "detail": "1.55000017, expected 1.55000000, off by 1.73e-7"
+  },
+  {
+   "check": "bandwidth_1db 40.28818544 0.004",
+   "status": "PASS",
+   "detail": "40.287356, expected 40.288185, relative error -2.06e-5"
+  },
+  {
+   "check": "bandwidth_3db 69.93124466 0.004",
+   "status": "PASS",
+   "detail": "69.931667, expected 69.931245, relative error 6.05e-6"
+  },
+  {
+   "check": "dtheta_dlambda -0.08969790 0.001",
+   "status": "PASS",
+   "detail": "-0.089698, expected -0.089698, relative error -3.53e-8"
+  },
+  {
+   "check": "bandwidth_formula 0.03",
+   "status": "PASS",
+   "detail": "40.287 nm computed, 40.261 nm from the formula, ratio 1.0006"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 2.8573949872878757e-09,
+   "angle": 6.217248937900877e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 7.317435546383422e-10,
+   "dtheta_dlambda": 3.527093284105831e-09,
+   "radiated": 5.606492559095955e-08,
+   "up": 0.0,
+   "overlap": 1.4532660934651886e-06,
+   "efficiency": 7.49713876702085e-07,
+   "peak_wavelength": 1.603290407103941e-07,
+   "peak_efficiency": 7.497138503897993e-07,
+   "bandwidth_1db": 2.8589206216622642e-05,
+   "bandwidth_3db": 4.518735704550636e-05,
+   "bandwidth_1db_formula": 1.6874676589395676e-07
+  },
+  "spectrum": 7.543279094690547e-07
+ }
+}
