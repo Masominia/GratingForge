@@ -1,0 +1,68 @@
+{
+ "case": "box_up35",
+ "title": "Intrinsic upward fraction 0.35 with the substrate",
+ "notes": [
+  "The more directional the grating itself, the less the substrate matters.",
+  "Reference: two-beam estimate in NumPy."
+ ],
+ "metrics": {
+  "wavelength": 1.55,
+  "n_full": 2.8477822434,
+  "n_etched": 2.5393495533,
+  "n_grating": 2.6935658984,
+  "group_index": 3.61809536,
+  "period": 0.63451311,
+  "angle": 10.0,
+  "orders": 1.0,
+  "second_order_wavelength": 1.70910287,
+  "dtheta_dlambda": -0.0874467,
+  "radiated": 0.98500442,
+  "up": 0.55031042,
+  "overlap": 0.7387971,
+  "efficiency": 0.40047103,
+  "efficiency_db": -3.974289,
+  "fibre_angle": 10.0,
+  "fibre_position": 4.982033,
+  "fibre_footprint": 5.28021838,
+  "peak_wavelength": 1.55141914,
+  "peak_efficiency": 0.40104159,
+  "bandwidth_1db": 36.11825,
+  "bandwidth_3db": 62.663566,
+  "bandwidth_1db_formula": 41.277326
+ },
+ "checks": [
+  {
+   "check": "up 0.55031042 1e-07",
+   "status": "PASS",
+   "detail": "0.55031042, expected 0.55031042, off by 3.80e-9"
+  },
+  {
+   "check": "efficiency 0.40047116 2e-05",
+   "status": "PASS",
+   "detail": "0.40047103, expected 0.40047116, off by -1.31e-7"
+  }
+ ],
+ "against_reference": {
+  "largest_differences": {
+   "n_full": 4.6274095666376525e-11,
+   "n_etched": 1.3460788039765248e-11,
+   "n_grating": 2.013234023934274e-11,
+   "group_index": 9.391438737793578e-10,
+   "period": 7.44814654396464e-10,
+   "angle": 1.7763568394002505e-15,
+   "orders": 0.0,
+   "second_order_wavelength": 3.164746464889845e-09,
+   "dtheta_dlambda": 3.6129811087359798e-09,
+   "radiated": 3.1795223121022786e-09,
+   "up": 3.796791103738428e-09,
+   "overlap": 2.5110856805010684e-07,
+   "efficiency": 1.3346041144446374e-07,
+   "peak_wavelength": 1.6091510257609798e-07,
+   "peak_efficiency": 1.4270549586470338e-07,
+   "bandwidth_1db": 8.18842895000671e-06,
+   "bandwidth_3db": 1.2894326829382408e-05,
+   "bandwidth_1db_formula": 9.023421654319463e-08
+  },
+  "spectrum": 1.441151153414033e-07
+ }
+}
